@@ -1,6 +1,5 @@
 export const chatData = [
   {
-    id: "1",
     name: "brandon.madsen",
     status: require("./images/icons/busy.png"),
     avatar: require("./images/profile/brandon.png"),
@@ -8,7 +7,6 @@ export const chatData = [
     message: "What's man, how are you...",
   },
   {
-    id: "2",
     name: "livia.siphron",
     status: require("./images/icons/away.png"),
     avatar: require("./images/profile/livia.png"),

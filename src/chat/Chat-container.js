@@ -10,7 +10,6 @@ export const Chats = ({
   phone,
   notification,
   menu,
-  type,
 }) => {
   const toggleClass = (e) => {
     const previousActive = document.querySelector(".section-chat.active");
@@ -49,7 +48,7 @@ export const Chats = ({
     );
   else if (!notification)
     return (
-      <div className="section-chat">
+      <div className={`section-chat`} onClick={toggleClass}>
         <div className="chat">
           <div className="chat-left">
             <div className="chat-photo">
@@ -79,7 +78,7 @@ export const Chats = ({
     );
   else if (!notification && !menu)
     return (
-      <div className="section-chat">
+      <div className={`section-chat`} onClick={toggleClass}>
         <div className="chat">
           <div className="chat-left">
             <div className="chat-photo">
@@ -106,7 +105,7 @@ export const Chats = ({
     );
   else
     return (
-      <div className="section-chat">
+      <div className={`section-chat`} onClick={toggleClass}>
         <div className="chat">
           <div className="chat-left">
             <div className="chat-photo">
