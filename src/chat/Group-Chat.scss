@@ -1,0 +1,85 @@
+@import "../styles/colors";
+
+//Group Section
+#section {
+  background: $background-color;
+  padding: 15px 0;
+}
+#section.chat-container {
+  max-height: 260px;
+  overflow-y: scroll;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 0;
+}
+.section-title span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: $title-color;
+}
+.plus-icon {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+.plus-icon:hover {
+  background: $hover-color;
+  cursor: pointer;
+}
+.chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4px 15px 0;
+  cursor: pointer;
+}
+.section-chat:hover {
+  background: $hover-color;
+}
+.section-chat.active {
+  background: $active-color;
+}
+.group-name {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: lowercase;
+  margin-left: 6px;
+}
+.chat-left {
+  display: flex;
+  align-items: flex-start;
+}
+.chat-photo {
+  margin-right: 10px;
+}
+.chat-middle-bottom {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 3px;
+}
+.chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right-chat-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3px;
+}
+.right-chat-icons .icon {
+  margin-left: 7px;
+}
+.chat-time {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  opacity: 0.3;
+}

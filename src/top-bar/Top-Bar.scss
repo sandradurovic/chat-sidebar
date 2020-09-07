@@ -1,0 +1,45 @@
+@import "../styles/colors";
+
+//Top Bar Section
+
+#top-bar-section {
+  background: $background-color;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $hover-color;
+  padding: 25px 15px 20px;
+}
+.profile-photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.status-icon {
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+}
+.top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+}
+.top-bar-icons {
+  height: 18px;
+  margin: 0 2px;
+  padding: 5px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-bar-icons:hover {
+  background: $hover-color;
+  cursor: pointer;
+  border-radius: 2px;
+}
